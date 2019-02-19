@@ -28,9 +28,9 @@ public class AddressesController {
 	
 	@GetMapping(value="/employees/address/get/{employeeEmail}", consumes=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Address> getAddressByAddressId(@PathVariable String employeeEmail) {
-		//return ResponseEntity.ok(addressesService.getByAddressEmployeeEmail(employeeEmail));
+		return ResponseEntity.ok(addressesService.getByAddressEmployeeEmail(employeeEmail));
 		
-		return ResponseEntity.notFound().build();
+		//return ResponseEntity.status(404).body(addressesService.getByAddressEmployeeEmail(employeeEmail));
 	}
 	
 	@GetMapping(value="/employees/address/demo", consumes=MediaType.APPLICATION_JSON_VALUE)

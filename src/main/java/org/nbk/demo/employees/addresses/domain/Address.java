@@ -21,7 +21,7 @@ public class Address {
 
 	private String pinCode;
 
-	private String employeeId;
+	private String employeeEmail;
 
 	public String getAddressId() {
 		return addressId;
@@ -79,12 +79,12 @@ public class Address {
 		this.pinCode = pinCode;
 	}
 
-	public String getEmployeeId() {
-		return employeeId;
+	public String getEmployeeEmail() {
+		return employeeEmail;
 	}
 
-	public void setEmployeeId(String employeeId) {
-		this.employeeId = employeeId;
+	public void setEmployeeEmail(String employeeEmail) {
+		this.employeeEmail = employeeEmail;
 	}
 
 	@Override
@@ -104,8 +104,8 @@ public class Address {
 		builder.append(country);
 		builder.append(", pinCode=");
 		builder.append(pinCode);
-		builder.append(", employeeId=");
-		builder.append(employeeId);
+		builder.append(", employeeEmail=");
+		builder.append(employeeEmail);
 		builder.append("]");
 		return builder.toString();
 	}

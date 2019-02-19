@@ -12,7 +12,7 @@ public interface AddressesService {
 	
 	public List<Address> listByEmployeeId(String employeeId);
 	
-	public Address getByAddressId(String addressId);
+	public Address getByAddressEmployeeEmail(String employeeEmail);
 	
 	public List<Address> listAddresses(); 
 }

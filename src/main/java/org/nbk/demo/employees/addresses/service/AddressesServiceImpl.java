@@ -32,8 +32,8 @@ public class AddressesServiceImpl implements AddressesService {
 	}
 
 	@Override
-	public Address getByAddressId(String addressId) {
-		return addressesRepository.getByAddressId(addressId);
+	public Address getByAddressEmployeeEmail(String employeeEmail) {
+		return addressesRepository.getByAddressEmployeeEmail(employeeEmail);
 	}
 
 	@Override
